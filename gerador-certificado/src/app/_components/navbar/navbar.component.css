@@ -1,0 +1,9 @@
+.navbar {
+  background-color: white;
+  padding: 1rem 2rem;
+  border-bottom: #e2e8f0 solid 1px;
+}
+
+.navbar-logo img{
+  size: 20px;
+}
