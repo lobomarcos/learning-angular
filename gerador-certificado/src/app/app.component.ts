@@ -1,12 +1,16 @@
 import { Component, signal } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "./_components/navbar/navbar.component";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [NavbarComponent],
+  imports: [RouterOutlet, NavbarComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
-  protected readonly title = signal('gerador-certificado');
+  title = 'gerador-certificado';
+  exibeNavbar: boolean = false;
 }
